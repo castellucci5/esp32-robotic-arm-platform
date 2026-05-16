@@ -75,8 +75,23 @@ Future integration with:
 
 ---
 
-## Project Status
+## Current Development Status
 
-Phase 1 completed.
+Current progress:
+- Original mechanical parts printed
+- Electronic components collected and tested
+- System architecture defined
 
-Future branches currently under development.
+Current development focuses on redesigning the base joint structure in order to:
+- increase internal volume
+- integrate ESP32 electronics
+- integrate power distribution
+- integrate PCA9685 module
+- integrate stepper motor driver
+
+The base structure will be mechanically modified by raising and hollowing the original support to create enough internal space for the embedded control system.
+
+Future developments will include:
+- linear axis expansion
+- remote control integration
+- wireless control architecture
