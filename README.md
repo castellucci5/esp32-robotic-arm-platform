@@ -4,29 +4,61 @@
 
 Custom evolution of the L-ONE Cyberbrick robotic arm platform.
 
-This project focuses on:
-- embedded control architecture
-- robotic system integration
-- custom electronics
-- modular hardware expansion
+This project combines mechanical redesign, electronics integration and custom ESP32 firmware to create a fully wireless desktop robotic platform.
+
+Version 1.0 is completed.
 
 ---
 
 ## Main Modifications
 
-### Base Joint Upgrade
-Replacement of the original base motor with:
-- 28BYJ-48 stepper motor
-- ULN2003 driver module
+### Mechanical Improvements
 
-### Control System
-Integration of:
+Compared to the original L-ONE Cyberbrick design, several modifications were introduced:
+
+- Enlarged fixed base.
+- Enlarged rotating base.
+- Internal compartment created for electronics integration.
+- Bearing support added to the base to improve stability and load distribution.
+- Replacement of the original base drive system with a 28BYJ-48 stepper motor and ULN2003 driver.
+- Redesigned rotating cover with screw and nut fastening for improved rigidity and easier maintenance.
+- Completely redesigned Joint 1 servo support.
+- Joint 1 servo is now independently mounted using dedicated fastening screws.
+- Modified worm gear assemblies to allow internal locking screws.
+- Reinforced the most critical mechanical areas using screw fasteners to improve robustness and reliability.
+- External ELEGOO power module with integrated ON/OFF switch.
+
+---
+
+## Electronics Integration
+
+Integrated components:
+
 - ESP32 microcontroller
 - PCA9685 servo controller
+- ULN2003 stepper driver
+- ELEGOO MB V2 power supply module
 
-### Power Architecture
-Integration of:
-- ELEGOO MB V2 power module
+All electronics are housed inside the enlarged rotating base.
+
+---
+
+## Software Architecture
+
+Custom firmware developed for ESP32.
+
+Features:
+
+- Local WiFi Access Point
+- Embedded Web Server
+- Browser-based control interface
+- HTML + CSS + JavaScript frontend
+- LittleFS filesystem integration
+
+Development environment:
+
+- Arduino IDE
+- LittleFS uploader plugin
 
 ---
 
@@ -36,62 +68,82 @@ Integration of:
 ESP32
  ├── PCA9685 → Servo Motors
  ├── ULN2003 → Stepper Motor
- └── WiFi/Bluetooth → Future Remote Control
+ ├── LittleFS → Web Interface
+ └── WiFi → Browser Control
 ```
-
----
-
-## Planned Expansions
-
-### Branch A — Linear Axis
-Future implementation of a 4th axis using:
-- linear rail
-- GT2 belt system
-- stepper motor
-
-### Branch B — Remote Control
-Future integration with:
-- Makerslab Arm Robot Control App
 
 ---
 
 ## Technologies
 
 ### Embedded & Electronics
+
 - ESP32
 - PCA9685
 - ULN2003
+- LittleFS
 - Embedded systems
 
+### Software
+
+- Arduino Framework
+- HTML
+- CSS
+- JavaScript
+
 ### Robotics
+
 - Servo motors
 - Stepper motors
 - Robotic arm integration
 
 ### CAD & Manufacturing
+
 - SolidWorks
 - Bambu Studio
-- 3D printing
+- 3D Printing
 
 ---
 
-## Current Development Status
+## Project Status
 
-Current progress:
-- Original mechanical parts printed
-- Electronic components collected and tested
-- System architecture defined
+✅ Version 1.0 completed
 
-Current development focuses on redesigning the base joint structure in order to:
-- increase internal volume
-- integrate ESP32 electronics
-- integrate power distribution
-- integrate PCA9685 module
-- integrate stepper motor driver
+Current features:
 
-The base structure will be mechanically modified by raising and hollowing the original support to create enough internal space for the embedded control system.
+- Mechanical redesign completed.
+- Electronics integration completed.
+- Custom ESP32 firmware completed.
+- Embedded web interface completed.
 
-Future developments will include:
-- linear axis expansion
-- remote control integration
-- wireless control architecture
+---
+
+## Planned Expansions
+
+### Branch A — Linear Axis
+
+Future implementation of a 4th axis using:
+
+- Linear rail
+- GT2 belt system
+- Stepper motor
+
+### Branch B — Remote Control
+
+Future integration with:
+
+- Makerslab Arm Robot Control App
+
+---
+
+## Gallery
+
+Pictures and videos will be added soon.
+
+---
+
+## Acknowledgements
+
+Original mechanical design inspired by the L-ONE Cyberbrick robotic arm project.
+
+This repository documents the custom mechanical, electronic and software modifications introduced during the development of this platform.
