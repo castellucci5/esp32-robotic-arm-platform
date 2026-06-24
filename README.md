@@ -3,7 +3,8 @@
 ## Overview
 
 Custom evolution of the L-ONE Cyberbrick robotic arm platform.
-![Robot Overview](images/WhatsApp Image 2026-06-23 at 20.31.28.jpeg)
+![Robot Overview](images/robot_overview.jpeg)
+
 
 This project combines mechanical redesign, electronics integration and custom ESP32 firmware to create a fully wireless desktop robotic platform.
 
