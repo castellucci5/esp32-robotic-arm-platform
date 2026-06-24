@@ -7,7 +7,7 @@ The Web page was implemented by files :
 
 These files are uploaded on ESP32 by LittleFS:
 `\Arduino_Project_Directory`
--Firmware                        
+- Firmware                        
 `\data`
 - index.html
 - style.css
