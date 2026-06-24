@@ -6,7 +6,8 @@ Custom evolution of the L-ONE Cyberbrick robotic arm platform.
 
 <p align="center">
   <a href="images/Robot_overview.jpeg">
-    <img src="images/Robot_overview.jpeg" width="500">
+    <img src="images/Robot_overview.jpeg" width="350">
+    <img src="images/Robot_overview_2.jpeg" width="350">
   </a>
 </p>
 
