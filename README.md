@@ -7,7 +7,7 @@ Custom evolution of the L-ONE Cyberbrick robotic arm platform.
 <p align="center">
   <a href="images/Robot_overview.jpeg">
     <img src="images/Robot_overview.jpeg" width="350">
-    <img src="images/Robot_overview_2.jpeg" width="100">
+    <img src="images/Robot_overview_2.jpeg" width="350">
   </a>
 </p>
 
@@ -59,7 +59,7 @@ All electronics are housed inside the enlarged rotating base.
 
 <p align="center">
   <a href="images/electronic_overview.jpeg">
-    <img src="images/electronic_overview.jpeg" width="350" high ="350">
+    <img src="images/electronic_overview.jpeg" width="350" high = "100" >
   </a>
 </p>
 
