@@ -6,7 +6,7 @@ The Web page was implemented by files :
 - script.js
 
 These files are uploaded on ESP32 by LittleFS:
-\\
+<br>
 `\Arduino_Project_Directory`
 - Firmware                        
 `\data`
