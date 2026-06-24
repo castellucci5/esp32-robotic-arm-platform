@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L-ONE Robot</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h1>L-ONE Robot</h1>
+  <p id="status">Pronto</p>
+
+  <div class="container">
+
+    <div class="box">
+      <h2>Base Z</h2>
+      <button onclick="sendCmd('/BASE_P')">↻ Base +</button>
+      <button class="stop" onclick="sendCmd('/BASE_STOP')">STOP</button>
+      <button onclick="sendCmd('/BASE_M')">↺ Base -</button>
+    </div>
+
+    <div class="box">
+      <h2>Servo 1</h2>
+      <button onclick="sendCmd('/S1A')">Avanti</button>
+      <button class="stop" onclick="sendCmd('/S1S')">STOP</button>
+      <button onclick="sendCmd('/S1D')">Indietro</button>
+    </div>
+
+    <div class="box">
+      <h2>Servo 2</h2>
+      <button onclick="sendCmd('/S2A')">Avanti</button>
+      <button class="stop" onclick="sendCmd('/S2S')">STOP</button>
+      <button onclick="sendCmd('/S2D')">Indietro</button>
+    </div>
+
+    <div class="box">
+      <h2>End Effector</h2>
+      <button onclick="sendCmd('/OPEN')">Apri</button>
+      <button onclick="sendCmd('/CLOSE')">Chiudi</button>
+    </div>
+
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
