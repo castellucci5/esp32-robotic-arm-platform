@@ -1,3 +1,5 @@
+# WEB PAGE
+
 The Web page was implemented by files :
 - index.html
 - style.css
