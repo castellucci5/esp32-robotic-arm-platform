@@ -59,7 +59,7 @@ All electronics are housed inside the enlarged rotating base.
 
 <p align="center">
   <a href="images/electronic_overview.jpeg">
-    <img src="images/electronic_overview.jpeg" width="350">
+    <img src="images/electronic_overview.jpeg" width="350" high ="350">
   </a>
 </p>
 
