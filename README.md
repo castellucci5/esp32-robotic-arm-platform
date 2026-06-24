@@ -59,7 +59,7 @@ All electronics are housed inside the enlarged rotating base.
 
 <p align="center">
   <a href="images/electronic_overview.jpeg">
-    <img src="images/electronic_overview.jpeg" width="350" high = "100" >
+    <img src="images/electronic_overview.jpeg" width="250"  >
   </a>
 </p>
 
@@ -83,7 +83,7 @@ Development environment:
 - LittleFS uploader plugin
 <p align="center">
   <a href="images/Web_page.png">
-    <img src="images/Web_page.png" width="350" high = "100" >
+    <img src="images/Web_page.png" width="700" >
   </a>
 </p>
 ---
