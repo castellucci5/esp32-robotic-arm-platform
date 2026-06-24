@@ -36,6 +36,14 @@ Compared to the original L-ONE Cyberbrick design, several modifications were int
 - Reinforced the most critical mechanical areas using screw fasteners to improve robustness and reliability.
 - External ELEGOO power module with integrated ON/OFF switch.
 
+<p align="center">
+  <a href="images/Adattatore_Elego.png">
+    <img src="images/Adattatore_Elego.png" width="150">
+    <img src="images/Base_Rotante.png" width="150">
+    <img src="images/supporto_servo_arm_1.png" width="150">
+    <img src="images/Cuscinetto_base.jpeg" width="150">
+  </a>
+</p>
 ---
 
 ## Electronics Integration
