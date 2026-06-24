@@ -81,7 +81,11 @@ Development environment:
 
 - Arduino IDE
 - LittleFS uploader plugin
-
+<p align="center">
+  <a href="images/Web_page.png">
+    <img src="images/Web_page.png" width="350" high = "100" >
+  </a>
+</p>
 ---
 
 ## Hardware Architecture
