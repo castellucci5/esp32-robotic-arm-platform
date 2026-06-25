@@ -3,7 +3,6 @@
 <p align="center">
   <img src="images/robot_overview.jpeg" width="750">
 </p>
-
 <p align="center">
 <b>Custom evolution of the L-ONE Cyberbrick Desktop Robotic Arm</b><br>
 Mechanical redesign • Embedded electronics • ESP32 firmware • Web interface
