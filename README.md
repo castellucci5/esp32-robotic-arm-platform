@@ -1,175 +1,167 @@
 # ESP32 Robotic Arm Platform
 
 <p align="center">
-  <img src="images/Robot_overview.jpeg" width="700">
+  <img src="images/robot_overview.jpeg" width="750">
 </p>
 
-## Overview
-
-This project is a custom evolution of the **L-ONE Cyberbrick Desktop Robotic Arm**.
-
-Instead of simply assembling the original model, the project focused on redesigning the mechanical structure, integrating new electronics and developing custom firmware based on an ESP32 microcontroller.
-
-The final result is a compact desktop robotic arm featuring an upgraded mechanical design, integrated electronics and a browser-based control interface over a local WiFi network.
-
----
-
-## Highlights
-
-- 🤖 Custom mechanical redesign
-- ⚡ ESP32-based control system
-- 🌐 Browser-based WiFi interface
-- 🎛️ PCA9685 servo controller
-- ⚙️ Stepper motor upgrade for the base joint
-- 🏗️ Integrated electronics compartment
-- 🖨️ Ready-to-print CAD and Bambu Studio files
-- 📚 Complete project documentation
-
----
-
-## Mechanical Improvements
-
-Compared to the original L-ONE Cyberbrick design, several modifications were introduced.
-
-### Base Assembly 
 <p align="center">
-  <img src="images/Cuscinetto_base.jpeg" width="650">
+<b>Custom evolution of the L-ONE Cyberbrick Desktop Robotic Arm</b><br>
+Mechanical redesign • Embedded electronics • ESP32 firmware • Web interface
 </p>
+
+---
+
+# Overview
+
+This project is a complete redesign of the original **L-ONE Cyberbrick Desktop Robotic Arm**.
+
+Instead of simply assembling the original model, the goal was to redesign the platform by improving its mechanical structure, integrating custom electronics inside the base and developing a completely new control architecture based on an ESP32 microcontroller.
+
+The result is a cleaner, stronger and more modular robotic platform that can be controlled directly from any web browser through a local WiFi network.
+
+---
+
+# Why this project?
+
+The original L-ONE Cyberbrick project is an excellent educational robotic platform.
+
+This repository documents how it has been transformed into a completely customized version by redesigning several mechanical components, integrating embedded electronics and developing custom firmware.
+
+Every modification presented here has been designed, manufactured and tested during the development of this project.
+
+---
+
+# Highlights
+
+- 🤖 Complete mechanical redesign
+- ⚡ ESP32-based control architecture
+- 🌐 Browser-based WiFi control
+- 🎛️ PCA9685 servo controller
+- ⚙️ Stepper motor upgrade
+- 🔩 Reinforced mechanical structure
+- 🏗️ Internal electronics compartment
+- 📚 Fully documented CAD files
+
+---
+
+# Mechanical Improvements
+
+<p align="center">
+  <img src="images/rotating_base.png" width="650">
+</p>
+
+Compared to the original project, the following improvements have been implemented.
+
+## Base Assembly
+
 - Enlarged fixed base
 - Enlarged rotating base
-- Internal compartment designed to house all electronics
-- Bearing support added to improve rotation stability
-- External ELEGOO MB V2 power module with integrated ON/OFF switch
+- Internal compartment for electronics
+- Integrated power distribution
+- External ELEGOO power switch
 
-### Base Joint
+## Base Rotation
+
 <p align="center">
-  <img src="images/Base_Rotante.png" width="650">
+  <img src="images/base_bearing.jpeg" width="500">
 </p>
 
-- Original motor replaced by a **28BYJ-48 stepper motor**
-- ULN2003 driver integration
-- Custom stepper mounting bracket
+The rotating base has been redesigned by introducing:
 
-### Joint 1
+- Bearing support
+- 28BYJ-48 stepper motor
+- ULN2003 driver
+- Improved structural rigidity
+
+## Joint 1 Redesign
+
 <p align="center">
   <img src="images/joint1_servo_support.png" width="500">
 </p>
-- Completely redesigned servo support
-- Servo is no longer integrated into the cover
-- Independent screw-mounted structure
-- Improved accessibility for maintenance
 
-### Mechanical Reinforcement 
-<p align="center">
-  <img src="images/fissaggio_viti.jpeg" width="500">
-</p>
-Several critical structural points have been redesigned using screw fasteners instead of relying solely on the original printed joints.
+The original servo holder has been completely redesigned.
 
-This solution increases:
+The servo motor is now mounted on an independent support instead of being integrated into the rotating cover.
 
+This solution improves:
+
+- maintenance
+- accessibility
 - structural rigidity
-- maintenance accessibility
-- long-term mechanical reliability
 
-### Worm Gear Improvements
+## Mechanical Reinforcement
 
-The original worm gears were modified to include internal locking screws, improving torque transmission and preventing unwanted movement.
+Critical structural points have been redesigned using screw fasteners.
+
+This solution significantly improves the robustness of the entire robotic arm compared to the original design.
 
 ---
 
-## Electronics Integration
+# Electronics Integration
 
-The rotating base has been redesigned to integrate all control electronics inside the robot.
+<p align="center">
+  <img src="images/electronics_overview.jpeg" width="650">
+</p>
+
+The enlarged rotating base houses all control electronics.
 
 Integrated hardware:
 
 - ESP32
 - PCA9685 Servo Driver
 - ULN2003 Stepper Driver
-- ELEGOO MB V2 Power Module
+- ELEGOO MB V2
 
-The result is a much cleaner design with all electronics protected inside the rotating base.
+The result is a compact and protected embedded control system.
+
+---
+
+# Software Architecture
 
 <p align="center">
-  <img src="images/electronic_overview.jpeg" width="650">
+  <img src="images/web_interface.png" width="700">
 </p>
 
-## Software Architecture
-
-Custom firmware was developed for the ESP32.
+A completely custom firmware has been developed for ESP32.
 
 Main features:
 
 - Local WiFi Access Point
 - Embedded Web Server
-- Browser-based user interface
+- Browser-based robot control
 - Servo control
 - Stepper motor control
+- HTML
+- CSS
+- JavaScript
 - LittleFS filesystem
-- HTML / CSS / JavaScript frontend
-
-Development environment:
-
-- Arduino IDE
-- LittleFS uploader plugin
 
 ---
 
-## Hardware Architecture
+# Hardware Architecture
 
 ```text
-                   Browser
-                      │
-                WiFi Connection
-                      │
-                    ESP32
-          ┌───────────┴───────────┐
-          │                       │
-       PCA9685                 ULN2003
-          │                       │
-     Servo Motors            Stepper Motor
+                Browser
+                   │
+              WiFi Network
+                   │
+                ESP32
+        ┌──────────┴──────────┐
+        │                     │
+    PCA9685               ULN2003
+        │                     │
+ Servo Motors          Stepper Motor
 ```
 
 ---
 
-## Technologies
-
-### Embedded Systems
-
-- ESP32
-- Arduino Framework
-- PCA9685
-- ULN2003
-- LittleFS
-
-### Software
-
-- HTML
-- CSS
-- JavaScript
-
-### Mechanical Design
-
-- SolidWorks
-- Bambu Studio
-- 3D Printing
-
-### Robotics
-
-- Servo Motors
-- Stepper Motors
-- Mechanical Design
-- Embedded Integration
-
----
-
-## Repository Structure
+# Repository Structure
 
 ```text
 cad/
 │
 ├── 3mf_files/
-├── solidworks/
+└── solidworks/
 
 firmware/
 
@@ -180,57 +172,74 @@ web_interface/
 
 ---
 
-## Project Status
+# Technologies
 
-✅ Version 1.0 Completed
+## Embedded
 
-Completed features:
+- ESP32
+- Arduino Framework
+- PCA9685
+- ULN2003
+- LittleFS
 
-- Mechanical redesign
-- Electronics integration
+## Software
+
+- HTML
+- CSS
+- JavaScript
+
+## CAD
+
+- SolidWorks
+- Bambu Studio
+- 3D Printing
+
+## Robotics
+
+- Servo Motors
+- Stepper Motors
+- Embedded Integration
+
+---
+
+# Project Status
+
+## ✅ Version 1.0 — First Complete Prototype
+
+Implemented features:
+
+- Complete mechanical redesign
+- Embedded electronics integration
 - ESP32 firmware
-- Embedded web interface
-- CAD documentation
-- Ready-to-print Bambu Studio files
+- Browser-based control
+- Ready-to-print CAD files
+- Complete project documentation
 
 ---
 
-## Future Development
+# Future Development
 
-### Branch A — Linear Axis
+## Branch A
 
-Future implementation of a fourth linear axis using:
+Linear fourth axis.
 
-- Linear rail
-- GT2 transmission
-- Stepper motor
+## Branch B
 
-### Branch B — Mobile Control
-
-Future integration with:
-
-- Makerslab Arm Robot Control App
+Integration with Makerslab Arm Robot Control.
 
 ---
 
-## Gallery
-
-Project images are available inside the **images** folder.
-
-Additional assembly pictures, electronics details and software screenshots will be added in future updates.
+# Gallery
 
 <p align="center">
-  <img src="images/robot_overview.png" width="320">
-  <img src="images/electronics_inside.png" width="320">
+  <img src="images/robot_overview.jpeg" width="350">
+  <img src="images/robot_overview_2.jpeg" width="350">
 </p>
 
-<p align="center">
-  <img src="images/joint1_servo_support.png" width="320">
-  <img src="images/web_interface.png" width="320">
-</p>
+---
 
-## Acknowledgements
+# Acknowledgements
 
 This project is based on the original **L-ONE Cyberbrick Desktop Robotic Arm**.
 
-The repository documents all the custom mechanical, electronic and software modifications developed during this project.
+This repository documents all custom mechanical, electronic and software developments introduced during the creation of this robotic platform.
