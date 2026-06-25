@@ -1,7 +1,7 @@
 # ESP32 Robotic Arm Platform
 
 <p align="center">
-  <img src="images/robot_overview.png" width="700">
+  <img src="images/Robot_overview.jpeg" width="700">
 </p>
 
 ## Overview
@@ -31,8 +31,10 @@ The final result is a compact desktop robotic arm featuring an upgraded mechanic
 
 Compared to the original L-ONE Cyberbrick design, several modifications were introduced.
 
-### Base Assembly
-
+### Base Assembly 
+<p align="center">
+  <img src="images/Cuscinetto_base.jpeg" width="650">
+</p>
 - Enlarged fixed base
 - Enlarged rotating base
 - Internal compartment designed to house all electronics
@@ -40,20 +42,27 @@ Compared to the original L-ONE Cyberbrick design, several modifications were int
 - External ELEGOO MB V2 power module with integrated ON/OFF switch
 
 ### Base Joint
+<p align="center">
+  <img src="images/Base_Rotante.png" width="650">
+</p>
 
 - Original motor replaced by a **28BYJ-48 stepper motor**
 - ULN2003 driver integration
 - Custom stepper mounting bracket
 
 ### Joint 1
-
+<p align="center">
+  <img src="images/joint1_servo_support.png" width="500">
+</p>
 - Completely redesigned servo support
 - Servo is no longer integrated into the cover
 - Independent screw-mounted structure
 - Improved accessibility for maintenance
 
-### Mechanical Reinforcement
-
+### Mechanical Reinforcement 
+<p align="center">
+  <img src="images/fissaggio_viti.jpeg" width="500">
+</p>
 Several critical structural points have been redesigned using screw fasteners instead of relying solely on the original printed joints.
 
 This solution increases:
@@ -81,7 +90,9 @@ Integrated hardware:
 
 The result is a much cleaner design with all electronics protected inside the rotating base.
 
----
+<p align="center">
+  <img src="images/electronic_overview.jpeg" width="650">
+</p>
 
 ## Software Architecture
 
@@ -111,12 +122,12 @@ Development environment:
                       │
                 WiFi Connection
                       │
-                   ESP32
+                    ESP32
           ┌───────────┴───────────┐
           │                       │
-      PCA9685                 ULN2003
+       PCA9685                 ULN2003
           │                       │
-   Servo Motors          Stepper Motor
+     Servo Motors            Stepper Motor
 ```
 
 ---
@@ -208,7 +219,15 @@ Project images are available inside the **images** folder.
 
 Additional assembly pictures, electronics details and software screenshots will be added in future updates.
 
----
+<p align="center">
+  <img src="images/robot_overview.png" width="320">
+  <img src="images/electronics_inside.png" width="320">
+</p>
+
+<p align="center">
+  <img src="images/joint1_servo_support.png" width="320">
+  <img src="images/web_interface.png" width="320">
+</p>
 
 ## Acknowledgements
 
