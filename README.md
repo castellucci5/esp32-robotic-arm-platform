@@ -1,7 +1,7 @@
 # ESP32 Robotic Arm Platform
 
 <p align="center">
-  <img src="images/robot_overview.jpeg" width="750">
+  <img src="images/robot_overview.jpeg" width="350">
 </p>
 <p align="center">
 <b>Custom evolution of the L-ONE Cyberbrick Desktop Robotic Arm</b><br>
@@ -46,7 +46,7 @@ Every modification presented here has been designed, manufactured and tested dur
 # Mechanical Improvements
 
 <p align="center">
-  <img src="images/rotating_base.png" width="650">
+  <img src="images/rotating_base.png" width="350">
 </p>
 
 Compared to the original project, the following improvements have been implemented.
@@ -62,7 +62,7 @@ Compared to the original project, the following improvements have been implement
 ## Base Rotation
 
 <p align="center">
-  <img src="images/base_bearing.jpeg" width="500">
+  <img src="images/base_bearing.jpeg" width="350">
 </p>
 
 The rotating base has been redesigned by introducing:
@@ -75,7 +75,7 @@ The rotating base has been redesigned by introducing:
 ## Joint 1 Redesign
 
 <p align="center">
-  <img src="images/joint1_servo_support.png" width="500">
+  <img src="images/joint1_servo_support.png" width="350">
 </p>
 
 The original servo holder has been completely redesigned.
@@ -99,7 +99,7 @@ This solution significantly improves the robustness of the entire robotic arm co
 # Electronics Integration
 
 <p align="center">
-  <img src="images/electronics_overview.jpeg" width="650">
+  <img src="images/electronics_overview.jpeg" width="350">
 </p>
 
 The enlarged rotating base houses all control electronics.
@@ -118,7 +118,7 @@ The result is a compact and protected embedded control system.
 # Software Architecture
 
 <p align="center">
-  <img src="images/web_interface.png" width="700">
+  <img src="images/web_interface.png" width="350">
 </p>
 
 A completely custom firmware has been developed for ESP32.
